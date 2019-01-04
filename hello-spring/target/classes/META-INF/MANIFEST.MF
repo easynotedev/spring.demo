@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Hello Spring Demo
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: antonin.k.m.tilaon
+Implementation-Vendor-Id: com.accenture.demo.spring
+Build-Jdk: 1.8.0_25
+Implementation-URL: http://projects.spring.io/spring-boot/hello-spring
+ /
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

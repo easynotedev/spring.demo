@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>AJAX calls REST</title>
+<script src="jquery-3.3.1.js"></script>
+<script>
+	$(document).ready(function() {
+		$.ajax({
+			type: "GET",
+			datatype: "json",
+			url: "http://localhost:8086/userservice/userinfo",
+			success: function(jsondata){
+				alert("Success! ");
+			},
+			error: function(status, errorThrown){
+				alert("There was an error! ");
+			},
+			complete: function(status){
+				alert("Request Complete");
+			}
+		}).then(function(jsondata) {
+			$('.userinfo-id').append(jsondata.id);
+			$('.userinfo-name').append(jsondata.name);
+			$('.userinfo-country').append(jsondata.country);
+			$('.userinfo-contact').append(jsondata.contact);
+		});
+	});
+</script>
+</head>
+<body>
+<div>
+	<p class="userinfo-id">ID: </p>
+	<p class="userinfo-name">NAME: </p>
+	<p class="userinfo-country">COUNTRY: </p>
+	<p class="userinfo-contact">CONTACT: </p>
+</div>
+</body>
+</html>
