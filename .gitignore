@@ -1,0 +1,23 @@
+.settings/
+.classpath
+.project
+.tern-project
+target/
+.metadata/
+Servers
+
+# Eclipse
+.classpath
+.project
+.settings/
+RemoteSystemsTempFiles 
+ 
+# Maven
+log/
+target/
+
+# ETC
+SEFUtility.jar
+ .springBeans
+.sonar/
+
